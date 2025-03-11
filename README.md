@@ -11,36 +11,27 @@ This project is a **fitness tracking and performance monitoring website** that h
 
 ## 🚀 Features  
 ✅ **Workout Tracking** – Log exercises, sets, reps, and duration.  
-📊 **Performance Monitoring** – View progress with charts and analytics.  
+📊 **Performance Monitoring** – View progress.  
 🔍 **Calorie & Nutrition Tracking** – Monitor daily calorie intake and expenditure.  
-📝 **Personalized Recommendations** – AI-powered fitness suggestions.  
-⏱️ **Real-time Activity Logging** – Instant updates on workouts.  
+F📝 **Personalized Recommendations** – Fitness suggestions.  
 🔒 **Secure User Authentication** – Ensures data privacy and security.  
 🎨 **Interactive Dashboard** – User-friendly UI with dynamic insights.  
 
 ---
 
-## 🛠️ Tech Stack  
-- **Frontend**: React.js / Next.js / HTML / CSS  
-- **Backend**: Node.js / Express.js  
-- **Database**: MongoDB / Firebase  
-- **Authentication**: JWT / OAuth  
-- **Deployment**: Vercel / Heroku / AWS  
-
----
 
 ## 📂 Folder Structure  
 📂 **Comprehensive-Fitness-Tracking**  
-│── 📁 **contact.html**  
-│── 📁 **index.html**   
-│── 📁 **login.html**   
-│── 📁 **dashboard.html**   
-│── 📁 **health-summary.html**   
-│── 📁 **register.html**   
-│── 📁 **upcoming-workouts.html**  
-│── 📁 **workouts-summary.html** 
-│── 📁 **Script.js** 
-│── 📁 **styles.css**   
+│── 📜 **contact.html**  
+│── 📜 **index.html**   
+│── 📜 **login.html**   
+│── 📜 **dashboard.html**   
+│── 📜 **health-summary.html**   
+│── 📜 **register.html**   
+│── 📜 **upcoming-workouts.html**  
+│── 📜 **workouts-summary.html** 
+│── 📜 **Script.js** 
+│── 📜 **styles.css**   
  
 
 ---
