@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Summary - Wolf Fitness</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Workout Summary</h1>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+    </nav>
+  </header>
+
+  <main class="summary-section">
+    <div id="workout-summary">
+      <!-- Summary will be dynamically generated here -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Wolf Fitness. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const workoutSummarySection = document.getElementById("workout-summary");
+
+      const currentUser = localStorage.getItem("currentUser");
+      const users = JSON.parse(localStorage.getItem("users")) || {};
+
+      if (!currentUser || !users[currentUser]) {
+        workoutSummarySection.innerHTML = "<p>No user is logged in. Please log in to view your workout summary.</p>";
+        return;
+      }
+
+      const user = users[currentUser];
+      const workouts = user.workouts || [];
+
+      if (workouts.length > 0) {
+        workoutSummarySection.innerHTML = `<h2>Your Workout Summary</h2>`;
+        workouts.forEach((workout, index) => {
+          workoutSummarySection.innerHTML += `
+            <div class="summary-card">
+              <h3>Workout ${index + 1}</h3>
+              <p>Steps: ${workout.steps}</p>
+              <p>Calories: ${workout.calories}</p>
+              <p>Heart Rate: ${workout.heartRate}</p>
+            </div>
+          `;
+        });
+      } else {
+        workoutSummarySection.innerHTML = "<p>No workout data available. Start tracking your workouts!</p>";
+      }
+    });
+  </script>
+</body>
+
+</html>
